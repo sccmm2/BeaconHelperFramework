@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A7EA109B1C6A03F100B93496 /* BeaconHelperFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A7EA109A1C6A03F100B93496 /* BeaconHelperFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7EA10A41C6A04BC00B93496 /* BeaconManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A7EA10A21C6A04BC00B93496 /* BeaconManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7EA10A51C6A04BC00B93496 /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA10A31C6A04BC00B93496 /* BeaconManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A7EA10971C6A03F100B93496 /* BeaconHelperFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BeaconHelperFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7EA109A1C6A03F100B93496 /* BeaconHelperFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeaconHelperFramework.h; sourceTree = "<group>"; };
 		A7EA109C1C6A03F100B93496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7EA10A21C6A04BC00B93496 /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		A7EA10A31C6A04BC00B93496 /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				A7EA109A1C6A03F100B93496 /* BeaconHelperFramework.h */,
+				A7EA10A21C6A04BC00B93496 /* BeaconManager.h */,
+				A7EA10A31C6A04BC00B93496 /* BeaconManager.m */,
 				A7EA109C1C6A03F100B93496 /* Info.plist */,
 			);
 			path = BeaconHelperFramework;
@@ -59,6 +65,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EA10A41C6A04BC00B93496 /* BeaconManager.h in Headers */,
 				A7EA109B1C6A03F100B93496 /* BeaconHelperFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EA10A51C6A04BC00B93496 /* BeaconManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +183,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -216,6 +224,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -233,6 +242,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BeaconHelperFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidsbus.BeaconHelperFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -249,6 +259,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BeaconHelperFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidsbus.BeaconHelperFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +286,7 @@
 				A7EA10A11C6A03F100B93496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
