@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-s.name     = 'BeaconHelper'
+s.name     = 'BeaconHelperFramework'
 s.version  = '1.0.0'
 s.license = 'CM'
 s.summary  = 'Beacon Helper'
